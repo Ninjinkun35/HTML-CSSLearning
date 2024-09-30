@@ -1,0 +1,100 @@
+/*CSSの基礎学習*/
+
+/* CSS…ホームページ画面のサイズや色、レイアウトなどを設定するためのプログラミング言語 */
+
+/* 
+　　　　　～CSSの書き方～
+HTMLのタグ（例: h1, h2, p, tableなど）{
+  （サイズ, 色, 配置などを設定するためのソースコード記入）
+}
+
+*/
+html{
+    /*背景画像の設定*/
+      /*①見やすいデザインにする 1.色使いに注意する*/
+    background-image: url("imgs/background.gif");
+    /*画面の大きさに合わせて背景画像を縮小・拡大*/
+    background-size: cover; /*Q.このコードを消えたら背景画像はどうなるのか確認しましょう！*/
+  }
+  
+  body {
+    /*Web画面の表示位置調整（ユーザビリティ）*/
+      /*①見やすいデザインにする 3.レイアウトを統一にする*/
+    max-width: 1064px;
+    min-width: 1064px;
+    margin: auto;
+    padding: 40px;
+    
+    /*Web画面の背景色の設定*/
+      /*①見やすいデザインにする 1.色使いに注意する*/
+    background-color: white;
+  }
+  
+  .title{ /* index.html内の<○○ class="title">となる部分。 最初に.を付ける必要あり */
+    
+    text-align: center; /* 文字の配置（中央揃え）*/
+      /* left(左揃え), center（中央揃え）, right(右揃え) */
+  }
+  
+  
+  h2{ /* HTMLの<h2></h2>内の部分 */
+  
+    /*①見やすいデザインにする 1.色使いに注意する*/
+   /*（←/*とここを消してください） color: red; /* 文字色の設定 */
+   /*（←/*とここを消してください） background-color: blue; /*背景色の設定*/ 
+    
+   /*（←/*とここを消してください）font-family: "Times New Roman", Times, serif; /* フォントの設定 */
+    
+  }
+  
+  .font-size{ /* index.html内の<○○ class="font-size">となる部分 */
+    /*文字の大きさの調整*/
+      /*①見やすいデザインにする 2.目立たせたいものを明確にする*/
+    font-size: xx-large;
+    /*文字の大きさの一覧
+      
+      小
+      ↑  xx-small;  
+      ￤ x-small;   
+      ￤ small;    
+      ￤ medium;（基準）
+      ￤ large;
+      ￤ x-large;
+      ￤ xx-large;
+      ↓ xxx-large;
+      大
+    
+    */
+  }
+  
+  table{  
+    margin: 0 auto; /* 表の外側の余白を設定（margin: 上下  左右）, auto…ランダムに指定（基本的は中央揃えとなります） */
+  }
+  
+  
+  img{
+    /*画像・写真の大きさ調整*/
+    width: 30%; /* 画像の幅（幅の長さ調整）*/
+    height: 30%; /* 画像の高さ（高さの調整）*/
+  }
+  
+  .Ninjin {
+    /*おなじまい, position…画像や文字の位置を調整するためのプロパティ*/
+    position: relative;
+    /*要素内の余白は消す*/
+    padding:0;
+  }
+  /*文字*/
+  #img span {
+    /*画像の上に重ねるように調整*/
+    position: absolute;
+    left: 180px;
+    /*以下装飾*/
+    color: white;
+    background: orange;
+    padding:0 2px;
+    line-height:1.5;
+  }
+  
+  /* コメントアウト（メモを書く時に役に立つ！）*/
+  /* */

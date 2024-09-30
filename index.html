@@ -1,0 +1,125 @@
+<!-- HTMLの基礎学習 -->
+
+<!DOCTYPE html> <!-- おまじない -->
+  <!-- html…ホームページ画面に文字や写真などを表示するように指示するプログラミング言語 -->
+  <html> 
+
+  <!-- <head>…ホームページの情報設定-->
+    <head> 
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>（タイトル名）</title> <!-- ホームページタイトル -->
+      <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+   <!-- <body>…ホームページ画面に表示される内容 -->
+    <body>
+      <h1 class="title"">
+        <abbr title="HyperText Markup Language">HTML</abbr>の基礎学習
+      </h1>
+      
+  <!-- HTMLの書き方の基本…<xx> XXX </xx> （このような形を「タグ」という） -->
+      
+    <!-- 見出し情報（一目で内容が分かるタイトル名）の設定  -->
+    <!-- Q. <h1>~<h6>の6種類があるよ。数字によってどのように違うのか調べよう！ -->
+    <!--①見やすいデザインにする 2.目立たせたいものを明確にする -->
+      ・＜h1＞
+      <h1>Hello World</h1>
+      ・＜h2＞
+      <h2>Hello World</h2>
+      ・＜h3＞
+      <h3>Hello World</h3>
+      ・＜h4＞
+      <h4>Hello World</h4>
+      ・＜h5＞
+      <h5>Hello World</h5>
+      ・＜h6＞
+      <h6>Hello World</h6>
+    <!--文字色や背景色の設定などはstyle.cssから確認ください-->
+
+      
+    <!-- 文章のまとまり（段落）の表示 -->
+      ・＜p＞
+      <p>Hello World</p>
+   
+    <!--太字-->
+      <!--①見やすいデザインにする 2.目立たせたいものを明確にする -->
+      ・＜b＞
+      <p><b>Hello World</b></p>
+
+    <!--style.css内のfont-sizeによる文章の大きさ調整-->
+      ・（CSS）font-size
+      <p class="font-size">Hello World</p>
+      
+    <!-- リスト作成 -->
+      <!-- <ul></ul>と<ol></ol>の違いを調べよう！ -->
+        <!--②読みやすい文章にする 3. 簡潔にまとめる -->
+      ・＜ul＞
+      <ul>
+        <li>にんじんくん</li>
+        <li>キャベツくん<li>
+        <li>トマトさん</li>
+      </ul>
+      ・＜ol＞
+      <ol>
+        <li>にんじんくん</li>
+        <li>キャベツくん</li>
+        <li>トマトさん</li>
+      </ol>
+
+    <!-- 表の作成<table></table> -->
+      <!-- <th></th>と<td></td>の違いを調べよう！ -->
+      ・＜table＞
+      <table border="1"> <!-- border="1"…表の線が表示されるためのコード -->
+        <tr>
+          <th>出席番号</th>
+          <th>名前</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>にんじんくん</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>キャベツくん</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>トマトさん</td>
+        </tr>
+      </table>
+
+      <!--
+      画像・写真の掲載<img>
+      src…掲載したい写真の設定, 
+      alt…画像・写真の名前（画像を見るのが難しい人向け）
+      　                                        -->
+      ・＜img＞ <br> <!-- <br>…改行 -->
+      <img src="imgs/Ninjinkun3.jpg", alt="にんじんくん">
+      <!-- 画像の大きさを調整したい場合は、style.cssから確認ください -->
+      
+    　<!-- URLの掲載<a href=""> -->
+        <!--③使いやすい操作性にする 3.一目でわかるようにする-->
+      <br>・＜a href＞ <br>
+      <a href="https://www.google.com/">Google</a>
+
+      <br>
+      <br>
+      
+      （おまけ）地図の掲載<br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.8413802249693!2d140.8798330259064!3d38.259984721867134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a28188b79172b%3A0xd23393ebcd025164!2z5LuZ5Y-w6aeF!5e0!3m2!1sja!2sjp!4v1721266833348!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br>     
+      （参考文献）
+      <a href="https://www.xserver.ne.jp/bizhp/google-map-embedded/"> Google Mapをホームページに埋め込む方法を分かりやすく解説！ -初心者のための会社ホームページ作り方講座-</a>
+
+      <br><br>（おまけ）・＜div＞, ＜span＞, position<br>
+      <div id="img">
+        <img src="imgs/Ninjin.jpg" class="Ninjin"/>
+        <span>にんじん</span>
+      </div>
+    </body>
+
+  </html>
+
+<!-- コメントアウト（メモを書く時に役に立つ！） -->
+<!-- -->
